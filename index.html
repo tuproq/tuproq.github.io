@@ -30,7 +30,10 @@
             </ul>
             <hr />
             <a href="https://github.com/tuproq"><img src="github.png" alt="" width="36" height="36" /></a>
-            <p class="mt-4 text-muted">&copy; 2020-2021 Tuproq</p>
+            <p class="mt-4 text-muted">&copy; 2020-<span id="currentYear"></span> Tuproq</p>
         </div>
+        <script type="text/javascript">
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
     </body>
 </html>
